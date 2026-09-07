@@ -4,8 +4,7 @@ package airCondionalTest;
 import airConditional.Ac;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class AcTest {
 
@@ -16,14 +15,22 @@ public class AcTest {
 
     }
 
-
-
-
     @Test
     public void testThatAcIsOn(){
         Ac ac = new Ac();
         ac.turnOn();
         assertTrue(ac.isOn);
 
+    }
+
+    @Test
+    public void testThatWhenTempsIsincreasedItIncrease(){
+        Ac ac = new Ac();
+        int actual = ac.getSpeed();
+        int expected = 0;
+        assertEquals(actual, expected);
+
+
+        
     }
 }
