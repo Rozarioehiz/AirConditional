@@ -30,7 +30,14 @@ public class AcTest {
         int expected = 0;
         assertEquals(actual, expected);
 
+    }
 
-        
+    @Test
+    public void testThatWhenTempIsReducedItDecreases(){
+        Ac ac = new Ac();
+        int actual = ac.setSpeed();
+        int expected = -1;
+        assertEquals(actual,expected);
+
     }
 }

@@ -3,7 +3,6 @@ package airConditional;
 public class Ac {
 
     public boolean isOn;
-    public boolean isOff;
     public int speed = 0;
 
     public static boolean isOn(){
@@ -11,10 +10,16 @@ public class Ac {
     }
 
     public void turnOn() {
+
         isOn = true;
     }
 
     public int getSpeed() {
+
         return speed;
+    }
+
+    public int setSpeed() {
+        return speed -1;
     }
 }
